@@ -1,0 +1,160 @@
+*{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+$primary-color: #3167eb;
+$primary-background: #F9F9F9;
+
+.sub-menu-area{
+    background-color: $primary-color;
+}
+.list-icon-social{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-icon-social li {
+    display: inline-block;
+    margin-right: 16px;
+    color:white
+}
+#logo-area h2{
+    font-size: 36px;
+    font-weight: 1000;
+    color: $primary-color;
+}
+.header_mobile:nth-child(2){
+    display: none !important;
+}
+.list-icon-header{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-icon-header li {
+    display: inline-block;
+    margin-right: 1.2rem;
+    color:white
+}
+.list-menu-primary{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-menu-primary li {
+    display: inline-block;
+    margin-right: 16px;
+    background-color:yellow;
+}
+.menu__show--result ul{
+    padding: 0;
+    list-style: none;
+}
+.menu__show--result ul li{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.menu__show--result ul li:hover{
+    color: white;
+    background-color: $primary-color;
+}
+.header__menu--primary{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header__menu--primary li{
+    display: inline-block;
+    margin:  16px 32px;
+    font-weight: 1000;
+}
+.feature{
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+}
+.category span{
+    font-size: 22px;
+}
+.category__card ul{
+    list-style-type: square;
+}
+.product{
+    /* width: 100%; */
+    background-color: white;
+    overflow: hidden;
+}
+.product:hover{
+    box-shadow: 0 0 16px 4px gray;
+    animation: productAnimetion linear .3s forwards;
+}
+@keyframes productAnimetion{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-30px);
+    }
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer ul li{
+    line-height: 28px;
+}
+#footer__iphone6{
+    margin-top: -150px;
+}
+@media only screen and (max-width:700px){
+    .icon_logo{
+        display: none;
+    }
+    .list-icon-social li {
+        margin-right: 10px;
+    }
+    .space{
+        display: none;
+    }
+    .list-icon-header li {
+        margin-right: 1rem;
+    }
+    .header__menu--primary:nth-child(2){
+        display: none;
+    }
+    .header_mobile:nth-child(2){
+        display: flex !important;
+    }
+    .header_mobile:nth-child(4){
+        display: none !important;
+    }
+    .product img{
+        width: 100% !important;
+        height: 100%;
+    }
+    #footer__iphone6{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width:1200px){
+    .list-icon-social li {
+        margin-right: 10px;
+    }
+    .space{
+        display: none;
+    }
+    .list-icon-header li {
+        margin-right: 1rem;
+    }
+    /* .header__menu--primary:nth-child(2){
+        display: none;
+    } */
+    .header_mobile:nth-child(2){
+        display: flex !important;
+    }
+    .header_mobile:nth-child(4){
+        display: none !important;
+    }
+    #footer__iphone6{
+        margin-top: 0;
+    }
+}

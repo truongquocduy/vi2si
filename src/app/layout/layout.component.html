@@ -1,0 +1,224 @@
+<div class="container-fluid">
+    <div class="row justify-content-center sub-menu-area p-2">
+        <div class="col-lg-11">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-6 col-4">
+                    <ul class="list-icon-social justify-content-end">
+                        <li style="margin-right: 1.2rem;"><i class="fa-brands fa-square-twitter"></i></li>
+                        <li style="margin-right: 1.2rem;"><i class="fa-brands fa-instagram"></i></li>
+                        <li style="margin-right: 1.2rem;"><i class="fa-brands fa-facebook"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 space"></div>
+                <div class="col-lg-3 col-sm-6 ps-2 col-8">
+                    <ul class="list-icon-social">
+                        <li><span>Giao hàng</span></li>
+                        <li><span>Trợ giúp</span></li>
+                        <li>
+                            <div class="dropdown">
+                                <span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    VND
+                                </span>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">VND</a></li>
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    Vie
+                                </span>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">En</a></li>
+                                    <li><a class="dropdown-item" href="#">Vie</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-11 ">
+            <div class="row pt-3 pb-3 justify-content-center">
+                <div class="col-lg-2 col-sm-7 col-2 mt-1">
+                    <div id="logo-area">
+                        <h2><img class="icon_logo" src="assets/images/icon/Group.png" alt=""><font class="ms-2">{{ webName }}</font></h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-5 col-10 ps-5 mt-1 header_mobile" style="display: flex;">
+                    <ul class="list-icon-header mt-3 ps-3">
+                        <li>
+                            <i class="fa-solid fa-cart-shopping text-dark"></i>
+                            <span class="badge m-1" style="position: relative;top: -12px;background-color: #3167eb;">4</span>
+                        </li>
+                        <li><i class="fa-solid fa-heart text-dark"></i>/li>
+                        <li><i class="fa-solid fa-user text-dark"></i></li>
+                    </ul>
+                    <ul class="list-icon-header">
+                        <li>
+                            <div class="dropdown">
+                                <span class="dropdown-toggle text-dark" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <span style="color: rgb(167, 145, 145);font-size: 12px;">Đăng ký / Đăng nhập</span> <br> <span style="font-size: 16px;">Kim Loan </span>
+                                </span>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 mt-1">
+                    <div class="input-group mt-2">
+                        <input type="text" class="form-control w-50" placeholder="Tìm kiếm" [(ngModel)]="searchString">
+                        <select class="form-control" id="sel1" [(ngModel)]="searchType">
+                            <option value="product">Sản phẩm</option>
+                            <option value="shop">Shop</option>
+                        </select>
+                        <span class="form-control text-center" style="border: 1px solid #ced4da;cursor: pointer;" (click)="searchSubmit()"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 ps-4 mt-1 header_mobile" style="display: flex;">
+                    <ul class="list-icon-header mt-3">
+                        <li>
+                            <i class="fa-solid fa-cart-shopping text-dark"></i>
+                            <span class="badge m-1" style="position: relative;top: -12px;background-color: #3167eb;">4</span>
+                        </li>
+                        <li><i class="fa-solid fa-heart text-dark"></i>/li>
+                        <li><i class="fa-solid fa-user text-dark"></i></li>
+                    </ul>
+                    <ul class="list-icon-header">
+                        <li>
+                            <div class="dropdown">
+                                <span class="dropdown-toggle text-dark" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <span style="color: rgb(167, 145, 145);font-size: 12px;">Đăng ký / Đăng nhập</span> <br> <span style="font-size: 16px;">Kim Loan </span>
+                                </span>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="border-top: 1px solid #E0E0E0;">
+        <div class="col-lg-10">
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 col-5" style="display: flex;">
+                    <ul class="header__menu--primary">
+                        <li data-bs-toggle="modal" data-bs-target="#myModal">
+                            <i class="fa-solid fa-list me-2"></i>
+                            <span>Danh mục</span>
+                        </li>
+                        <li>Thời trang</li>
+                        <li>Tạp hóa</li>
+                        <li>Công nghệ</li>
+                        <li>Thể thao & sức khỏe</li>
+                        <li>Phụ kiện</li>
+                        <li>Nội thất</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-7">
+                    <button class="btn btn-outline-primary m-2 ps-5 pe-5 btn-buy-with_me">Bán hàng cùng ADA68</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <div class="row footer justify-content-center bg-dark">
+        <div class="col-lg-10 p-4">
+            <div class="row text-light pt-5">
+                <div class="col-lg-3 col-6">
+                    <h6>Công ty</h6>
+                    <ul class="mt-3">
+                        <li>Giới thiệu về ADA68</li>
+                        <li>Giải pháp kinh doanh</li>
+                        <li>Tạo mã QR</li>
+                        <li>Báo cáo lỗ hổng bảo mật</li>
+                    </ul>
+                    <h6 class="mt-5">Kết nối</h6>
+                    <ul class="mt-3">
+                        <li>Trợ giúp</li>
+                        <li>Nghề nghiệp</li>
+                        <li>Liên hệ</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h6>Chính sách</h6>
+                    <ul class="mt-3">
+                        <li>Điều khoản và điều kiện</li>
+                        <li>Chính sách</li>
+                        <li>Hỗ trợ</li>
+                        <li>Cách thanh toán</li>
+                    </ul>
+                    <h6 class="mt-5">Theo dõi</h6>
+                    <ul class="mt-3">
+                       <li>Facebook</li>
+                       <li>Twitter</li>
+                       <li>Likedin</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h6>Tải app</h6>
+                    <ul class="mt-3">
+                        <li>
+                            <img src="assets/images/icon/download-on-the-app-store-apple.png" alt="">
+                        </li>
+                        <li class="mt-2">
+                            <img src="assets/images/icon/google-play-download-android-app.png" alt="">
+                        </li>
+                    </ul>
+                    <h6 class="mt-5">Kết nối mạng xã hội</h6>
+                    <ul class="mt-3">
+                        <li class="mt-2">
+                            <button class="btn btn-primary">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="ms-1">Facebook</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6" id="footer__iphone6">
+                    <img src="assets/images/iPhone 6+ Copy.png" class="w-100 h-100" >
+                </div>
+               
+            </div>
+        </div>
+        <div class="col-lg-12 text-center p-4 text-light" style="background-color: black;">
+            © 2022 ADA68 Co.,Ltd. All rights reserved
+        </div>
+    </div>
+</div>
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body menu__show--result" style="min-height: 500px;">
+                <div class="row p-3" >
+                    <div class="col-lg-3" style="background-color: rgb(223, 207, 207);">
+                        <ul>
+                            <li *ngFor="let item of listCategory" style="cursor: pointer;"><img class="me-2" [src]="item.image" alt="" style="width: 30px;">{{ item.name }}</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <ul>
+                                <li *ngFor="let item of listCategory" style="cursor: pointer;display: inline-block;width: 33%;"><img class="me-2" [src]="item.image" alt="" style="width: 30px;">{{ item.name }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

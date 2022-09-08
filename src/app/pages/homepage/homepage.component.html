@@ -1,0 +1,437 @@
+<div class="row">
+    <div class="col-lg-12">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button *ngFor="let item of listBanner;let index = index" type="button" data-bs-target="#demo" [attr.data-bs-slide-to]="index" [class]="{'active':index == 0}" ></button>
+            </div>
+        
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item" [class]="{'active':index == 0}" *ngFor="let item of listBanner;let index = index">
+                    <img [src]="item.photo" alt="Los Angeles" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-4 p-3">
+    <div class="col-lg-10 feature p-3">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="assets/images/icon/local_shipping.png" alt=""> <br>
+                <strong>Giao hàng nhanh</strong>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodconsectetur adipisicing elit, sed do eiusmod 
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets/images/icon/Frame.png" alt="" class="pb-2"> <br>
+                <strong>Tạo cửa hàng dễ dàng</strong>
+                <p>
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmodconsectetur adipisicing elit, sed do eiusmod tempor 
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets/images/icon/local_shipping Copy 2.png" alt=""> <br>
+                <strong>Bảo mật</strong>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodconsectetur adipisicing elit, sed do eiusmod tempor
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-4 p-4">
+    <div class="col-lg-10">
+        <div class="row category">
+            <div class="col-lg-12">
+                <span class="pb-2" style="border-bottom: 5px solid #3167eb;">Danh mục</span>
+                <span style="float: right;color: #4A4A4A;">Xem thêm</span>
+            </div>
+            <span class="ms-3 me-3 mb-5 mt-2" style="width: 100%; height: 3px;background-color: #E0E0E0;z-index: -1;"></span>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2-1.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2-2.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2-3.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2-4.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2-5.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2-6.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    <div class="col-lg-3 col-6 p-4 category__card">
+                        <img src="assets/images/food_and_drink_masthead2-7.png" class="w-100" alt="">
+                        <p class="mt-2">
+                            <strong>Làm đẹp và sức khỏe</strong>
+                        </p>
+                        <ul>
+                            <li>Dụng cụ làm đẹp</li>
+                            <li>Mỹ phẩm</li>
+                            <li>Salon & Spa</li>
+                            <li>Gym & fitness</li>
+                        </ul>
+                        <button class="btn" style="color: #3167eb;font-size: 14px;">Xem thêm</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-4 p-4">
+    <div class="col-lg-10">
+        <div class="row category">
+            <div class="col-lg-12">
+                <span class="pb-2" style="border-bottom: 5px solid #3167eb;">Sản phẩm nổi bật</span>
+                <span style="float: right;color: #4A4A4A;">Xem thêm</span>
+            </div>
+            <span class="ms-3 me-3 mb-5 mt-2" style="width: 100%; height: 3px;background-color: #E0E0E0;z-index: -1;"></span>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9 p-3 col-9">
+                        <img [src]="myGlobals.tmp_domain + 'assets/images/vendorbanner/' + listFeatureProductsFirst.user.shop_image" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-3 p-3 col-3">
+                        <img src="assets/images/349277-buffet-toi-hai-san-tom-hum-tai-khach-san-5-sao-renaissance-riverside-sai-gon-bao-gom-nuoc-uong.png" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 p-3" *ngFor="let item of listFeatureProducts;let index = index">
+                                <a [href]="myGlobals.tmp_domain +'item/' + item.slug" class="nav-link">
+                                    <div class="product mx-auto" data-bs-toggle="tooltip" [title]="item.name">
+                                        <img [src]="item.thumbnail" alt="" class="mx-auto d-block"  style="height: 288px;width: auto;">
+                                        <div class="p-3">
+                                            <p class=" mt-2 mb-2">
+                                                <strong>{{ item.name.slice(0,35) }}</strong> <span *ngIf="item.name.length > 35">...</span>
+                                            </p>
+                                            <strong style="color: #3167eb;">{{ item.price |currency:'':'':'.0-2' }} VNĐ</strong>
+                                            <p class="m-0" style="font-size: 12px;"><font style="text-decoration-line: line-through;">{{ item.previous_price |currency:'':'':'.0-2' }} VNĐ</font></p>
+                                            <p class="mt-1 pb-3" style="font-size: 12px;">
+                                                4.6 sao
+                                                <i class="fa-solid fa-star ms-2"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <button class="btn btn-outline-primary mt-1" style="float: right;min-width: 70px;">Buy</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-4 p-4" style="background-color: #F9F9F9;">
+    <div class="col-lg-10">
+        <div class="row category">
+            <div class="col-lg-12">
+                <span class="pb-2" style="border-bottom: 5px solid #3167eb;">Sản phẩm bán chạy nhất</span>
+                <span style="float: right;color: #4A4A4A;">Xem thêm</span>
+            </div>
+            <span class="ms-3 me-3 mb-5 mt-2" style="width: 100%; height: 3px;background-color: #E0E0E0;z-index: -1;"></span>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3 p-3 col-3">
+                        <img src="assets/images/349277-buffet-toi-hai-san-tom-hum-tai-khach-san-5-sao-renaissance-riverside-sai-gon-bao-gom-nuoc-uong.png" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-9 p-3 col-9">
+                        <img [src]="myGlobals.tmp_domain + 'assets/images/vendorbanner/' + listBestProductsFirst.user.shop_image" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 p-3" *ngFor="let item of listBestProducts;let index = index">
+                                <a [href]="myGlobals.tmp_domain +'item/' + item.slug" class="nav-link">
+                                    <div class="product mx-auto" data-bs-toggle="tooltip" [title]="item.name">
+                                        <img [src]="item.thumbnail" alt="" class="mx-auto d-block"  style="height: 288px;width: auto;">
+                                        <div class="p-3">
+                                            <p class=" mt-2 mb-2">
+                                                <strong>{{ item.name.slice(0,35) }}</strong> <span *ngIf="item.name.length > 35">...</span>
+                                            </p>
+                                            <strong style="color: #3167eb;">{{ item.price |currency:'':'':'.0-2' }} VNĐ</strong>
+                                            <p class="m-0" style="font-size: 12px;"><font style="text-decoration-line: line-through;">{{ item.previous_price |currency:'':'':'.0-2' }} VNĐ</font></p>
+                                            <p class="mt-1 pb-3" style="font-size: 12px;">
+                                                4.6 sao
+                                                <i class="fa-solid fa-star ms-2"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <button class="btn btn-outline-primary mt-1" style="float: right;min-width: 70px;">Buy</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center p-4" style="background-color: #F9F9F9;">
+    <div class="col-lg-10">
+        <div class="row category">
+            <div class="col-lg-12">
+                <span class="pb-2" style="border-bottom: 5px solid #3167eb;">Xếp hạng cao nhất</span>
+                <span style="float: right;color: #4A4A4A;">Xem thêm</span>
+            </div>
+            <span class="ms-3 me-3 mb-5 mt-2" style="width: 100%; height: 3px;background-color: #E0E0E0;z-index: -1;"></span>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9 p-3 col-12">
+                        <img [src]="myGlobals.tmp_domain + 'assets/images/vendorbanner/' + listTopProductsFirst.user.shop_image" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-3 p-3 col-3">
+                        <img src="assets/images/349277-buffet-toi-hai-san-tom-hum-tai-khach-san-5-sao-renaissance-riverside-sai-gon-bao-gom-nuoc-uong.png" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 p-3" *ngFor="let item of listTopProducts;let index = index">
+                                <a [href]="myGlobals.tmp_domain +'item/' + item.slug" class="nav-link">
+                                    <div class="product mx-auto" data-bs-toggle="tooltip" [title]="item.name">
+                                        <img [src]="item.thumbnail" alt="" class="mx-auto d-block"  style="height: 288px;width: auto;">
+                                        <div class="p-3">
+                                            <p class=" mt-2 mb-2">
+                                                <strong>{{ item.name.slice(0,35) }}</strong> <span *ngIf="item.name.length > 35">...</span>
+                                            </p>
+                                            <strong style="color: #3167eb;">{{ item.price |currency:'':'':'.0-2' }} VNĐ</strong>
+                                            <p class="m-0" style="font-size: 12px;"><font style="text-decoration-line: line-through;">{{ item.previous_price |currency:'':'':'.0-2' }} VNĐ</font></p>
+                                            <p class="mt-1 pb-3" style="font-size: 12px;">
+                                                4.6 sao
+                                                <i class="fa-solid fa-star ms-2"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <button class="btn btn-outline-primary mt-1" style="float: right;min-width: 70px;">Buy</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center p-4" style="background-color: #F9F9F9;">
+    <div class="col-lg-10">
+        <div class="row category">
+            <div class="col-lg-12">
+                <span class="pb-2" style="border-bottom: 5px solid #3167eb;">Big sale</span>
+                <span style="float: right;color: #4A4A4A;">Xem thêm</span>
+            </div>
+            <span class="ms-3 me-3 mb-5 mt-2" style="width: 100%; height: 3px;background-color: #E0E0E0;z-index: -1;"></span>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3 p-3 col-3">
+                        <img src="assets/images/349277-buffet-toi-hai-san-tom-hum-tai-khach-san-5-sao-renaissance-riverside-sai-gon-bao-gom-nuoc-uong.png" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-9 p-3 col-9">
+                        <img [src]="myGlobals.tmp_domain + 'assets/images/vendorbanner/' + listBigProductsFirst.user.shop_image" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 p-3" *ngFor="let item of listBigProducts;let index = index">
+                                <a [href]="myGlobals.tmp_domain +'item/' + item.slug" class="nav-link">
+                                    <div class="product mx-auto" data-bs-toggle="tooltip" [title]="item.name">
+                                        <img [src]="item.thumbnail" alt="" class="mx-auto d-block"  style="height: 288px;width: auto;">
+                                        <div class="p-3">
+                                            <p class=" mt-2 mb-2">
+                                                <strong>{{ item.name.slice(0,35) }}</strong> <span *ngIf="item.name.length > 35">...</span>
+                                            </p>
+                                            <strong style="color: #3167eb;">{{ item.price |currency:'':'':'.0-2' }} VNĐ</strong>
+                                            <p class="m-0" style="font-size: 12px;"><font style="text-decoration-line: line-through;">{{ item.previous_price |currency:'':'':'.0-2' }} VNĐ</font></p>
+                                            <p class="mt-1 pb-3" style="font-size: 12px;">
+                                                4.6 sao
+                                                <i class="fa-solid fa-star ms-2"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <button class="btn btn-outline-primary mt-1" style="float: right;min-width: 70px;">Buy</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center p-4" style="background-color: #F9F9F9;">
+    <div class="col-lg-10">
+        <div class="row category">
+            <div class="col-lg-12">
+                <span class="pb-2" style="border-bottom: 5px solid #3167eb;">Deal chớp nhoáng</span>
+                <span style="float: right;color: #4A4A4A;">Xem thêm</span>
+            </div>
+            <span class="ms-3 me-3 mb-5 mt-2" style="width: 100%; height: 3px;background-color: #E0E0E0;z-index: -1;"></span>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9 p-3 col-9">
+                        <img [src]="myGlobals.tmp_domain + 'assets/images/' + listDiscountProductsFirst.user.shop_image" class="w-100 h-100" alt="" style="max-height: 350px;">
+                    </div>
+                    <div class="col-lg-3 p-3 col-3">
+                        <img src="assets/images/349277-buffet-toi-hai-san-tom-hum-tai-khach-san-5-sao-renaissance-riverside-sai-gon-bao-gom-nuoc-uong.png" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 p-3" *ngFor="let item of listDiscountProducts;let index = index">
+                                <a [href]="myGlobals.tmp_domain +'item/' + item.slug" class="nav-link">
+                                    <div class="product mx-auto" data-bs-toggle="tooltip" [title]="item.name">
+                                        <img [src]="item.thumbnail" alt="" class="mx-auto d-block"  style="height: 288px;width: auto;">
+                                        <div class="p-3">
+                                            <p class=" mt-2 mb-2">
+                                                <strong>{{ item.name.slice(0,35) }}</strong> <span *ngIf="item.name.length > 35">...</span>
+                                            </p>
+                                            <strong style="color: #3167eb;">{{ item.price |currency:'':'':'.0-2' }} VNĐ</strong>
+                                            <p class="m-0" style="font-size: 12px;"><font style="text-decoration-line: line-through;">{{ item.previous_price |currency:'':'':'.0-2' }} VNĐ</font></p>
+                                            <p class="mt-1 pb-3" style="font-size: 12px;">
+                                                4.6 sao
+                                                <i class="fa-solid fa-star ms-2"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <button class="btn btn-outline-primary mt-1" style="float: right;min-width: 70px;">Buy</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center p-5">
+    <div class="col-lg-10">
+        <div class="row">
+            <div class="col-lg-6 p-4">
+                <img src="assets/images/Sign Up.png" class="w-100" alt="" style="border-radius: 10px;">
+            </div>
+            <div class="col-lg-6 p-5" style="color: gray;">
+                <h6>CHÀO MỪNG ĐẾN VỚI ADA68</h6>
+                <h2 class="text-dark">Tạo account</h2>
+                <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                        <label for="name" class="form-label">Tên</label>
+                        <input type="text" class="form-control p-3" id="name"  name="name">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="phone" class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control p-3" id="phone"  name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Mật khẩu</label>
+                        <input type="password" class="form-control p-3" id="pwd" name="pswd">
+                    </div>
+                    <div style="display: flex;">
+                        <button type="submit" class="btn btn-primary pt-2 ps-4 pe-4 mt-3" style="max-height: 80px;border-radius: 0;">Đăng nhập</button>
+                        <div class="mt-4 ms-5" style="font-size: 13px;">Chưa có tài khoản? <a class="ms-2" href="#">Đăng ký</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
