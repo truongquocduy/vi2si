@@ -43,7 +43,8 @@ $primary-background: #F9F9F9;
         height: 100%;
     }
     .product:hover{
-        animation: none;
+        box-shadow: 0 0 4px 1px gray;
+        animation: none !important;
     }
 }
 @media only screen and (max-width:1200px){

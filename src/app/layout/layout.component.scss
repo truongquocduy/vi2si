@@ -88,6 +88,9 @@ $primary-background: #F9F9F9;
     margin-top: -150px;
 }
 @media only screen and (max-width:700px){
+    .w-40{
+        width: 40% !important;
+    }
     .m-d-none{
         display: none !important;
     }
